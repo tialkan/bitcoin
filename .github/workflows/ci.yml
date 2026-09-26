@@ -293,7 +293,7 @@ jobs:
     # Record frozen commit, so that the native tests on cross-builds can run on
     # the exact same commit id of the build.
     name: '[meta] record frozen commit'
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     outputs:
       commit: ${{ steps.record-commit.outputs.commit }}
     steps:
